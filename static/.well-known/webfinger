@@ -1,0 +1,18 @@
+{
+  "subject": "acct:blog.gabi.net.ar@blog.gabi.net.ar",
+  "aliases": [
+    "https://blog.gabi.net.ar/"
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://fed.brid.gy/r/https://blog.gabi.net.ar/"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://blog.gabi.net.ar/"
+    }
+  ]
+}

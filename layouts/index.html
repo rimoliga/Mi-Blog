@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ partial "hcard.html" . }}
+<main class="h-feed">
+  <h1 class="p-name" style="display:none">{{ .Site.Title }}</h1>
+  {{ range first 20 (where .Site.RegularPages "Section" "posts") }}
+  <article class="h-entry">
+    <h2><a class="u-url p-name" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{ .Date.Format "2 Jan 2006" }}
+    </time>
+    <div class="p-summary">{{ .Summary }}</div>
+  </article>
+  {{ end }}
+</main>
+{{ end }}

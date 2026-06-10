@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="h-entry">
+  <h1 class="p-name">{{ .Title }}</h1>
+  <a class="u-url" href="{{ .Permalink }}" style="display:none">{{ .Permalink }}</a>
+  <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ .Date.Format "2 Jan 2006" }}
+  </time>
+  <div class="p-author h-card" style="display:none">
+    <a class="p-name u-url" href="https://blog.gabi.net.ar/">rimoliga</a>
+  </div>
+  <div class="e-content">
+    {{ .Content }}
+  </div>
+  <hr>
+  <p><small>
+    <a href="https://fed.brid.gy/r/{{ .Permalink }}">Responder desde el Fediverso</a>
+  </small></p>
+</article>
+{{ end }}

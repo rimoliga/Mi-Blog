@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/about/">Acerca de</a>
+    <a href="/index.xml">RSS</a>
+  </nav>
+  {{ block "main" . }}{{ end }}
+  <footer>
+    <p><small>© {{ now.Year }} rimoliga · <a href="/index.xml">Feed RSS</a> · Federado vía <a href="https://fed.brid.gy">Bridgy Fed</a></small></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+baseURL = "https://blog.gabi.net.ar/"
+languageCode = "es"
+title = "Blog de rimoliga"
+
+[params]
+  author = "rimoliga"
+  description = "Blog personal federado"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[services.rss]
+  limit = 20
