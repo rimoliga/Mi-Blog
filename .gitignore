@@ -1,0 +1,14 @@
+# Hugo — directorios generados
+public/
+resources/
+
+# content/posts/ es generado por obsidian_to_hugo.py en CI; no se versiona
+content/posts/
+
+# static/img/ es generado por obsidian_to_hugo.py en CI; no se versiona
+static/img/
+
+# Obsidian: estado volátil/personal del vault
+vault/.obsidian/workspace*
+vault/.obsidian/cache
+vault/.trash/
